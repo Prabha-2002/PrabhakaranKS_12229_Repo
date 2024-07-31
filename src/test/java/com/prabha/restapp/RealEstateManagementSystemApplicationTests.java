@@ -15,14 +15,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
-import com.prabha.restapp.service.OwnerService;
 
 class RealEstateManagementSystemApplicationTests {
-	@Autowired
-	private OwnerService impl;
+
 
 	WebDriver driver;
 
@@ -44,7 +40,6 @@ class RealEstateManagementSystemApplicationTests {
 		driver.findElement(By.id("aadhaar")).sendKeys("9087656");
 		driver.findElement(By.id("nooflands")).sendKeys("23");
 		driver.findElement(By.id("submit")).submit();
-		driver.navigate().to("http://localhost:3001/viewowner");
 	}
 	@Test
 	void testAddOwner2() {
