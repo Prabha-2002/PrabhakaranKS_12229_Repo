@@ -22,7 +22,6 @@ public class LandRepoImpl implements LandRepo {
 
 	public String save(Land land) {
 		if (land != null) {
-			System.out.print(land);
 			eManager.merge(land);
 			return ("added successfully");
 		} else {
@@ -43,7 +42,6 @@ public class LandRepoImpl implements LandRepo {
 	@Override
 	public String update(Land land) {
 		if (land != null) {
-			System.out.print(land);
 			eManager.merge(land);
 			return ("updated successfully");
 

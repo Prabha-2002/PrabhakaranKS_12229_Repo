@@ -22,7 +22,6 @@ public class OwnerRepoImpl implements OwnerRepo {
 
 	public String save(Owner owner) {
 		if (owner != null) {
-			System.out.print(owner);
 			eManager.merge(owner);
 			return ("added");
 		} else {
@@ -43,7 +42,6 @@ public class OwnerRepoImpl implements OwnerRepo {
 	@Override
 	public String update(Owner owner) {
 		if (owner != null) {
-			System.out.print(owner);
 			eManager.merge(owner);
 			return ("updated");
 		} else {

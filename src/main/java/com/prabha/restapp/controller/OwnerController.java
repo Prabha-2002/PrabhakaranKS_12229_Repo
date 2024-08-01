@@ -22,11 +22,11 @@ public class OwnerController {
 	}
 
 	@PostMapping
-	public String insertOwner(@RequestBody Owner Owner)
+	public String insertOwner(@RequestBody Owner owner)
 	{
 		String msg="";
 		try {
-			serv.addOwner(Owner);
+			serv.addOwner(owner);
 			msg="Owner details are added";
 		}
 		catch(Exception e){
@@ -49,10 +49,10 @@ public class OwnerController {
 	
 	
 	@PutMapping
-	public String updateOwner(@RequestBody Owner Owner) {
+	public String updateOwner(@RequestBody Owner owner) {
 		String msg="";
 		try {
-			serv.updateOwner(Owner);
+			serv.updateOwner(owner);
 			msg="Owner details are updated";
 		}
 		catch(Exception e){

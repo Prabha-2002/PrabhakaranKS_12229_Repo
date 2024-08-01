@@ -49,10 +49,10 @@ public class LandController {
 	}
 
 	@PutMapping
-	public String updateLand(@RequestBody Land Land) {
+	public String updateLand(@RequestBody Land land) {
 		String msg = "";
 		try {
-			serv.updateLand(Land);
+			serv.updateLand(land);
 			msg = "land details are updated";
 		} catch (Exception e) {
 			msg = "land details are not updated";
